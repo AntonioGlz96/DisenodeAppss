@@ -1,0 +1,851 @@
+% Created 2020-04-24 vie 23:03
+% Intended LaTeX compiler: pdflatex
+\documentclass[12pt,a4paper, twosite]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{indentfirst}
+\setlength{\parindent}{1em}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[left=2.00cm, right=2.50cm, top=2.50cm, bottom=2.00cm]{geometry}
+\usepackage{fancyhdr}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\emph{\uppercase{\leftmark}}}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{1.0pt}
+\pagestyle{fancy}
+\date{02/02/2024}
+\thispagestyle{empty}
+\begin{document}
+    \vspace{150pt}
+\title{ORDENES DE TRABAJO}
+\author{UNIVERSIDAD TECNOLOGICA DE TIJUANA \\ TECNOLOGIAS DE LA INFORMACION \\ DESARROLLO DE SOFTWARE MULTIPLATAFORMA}
+\vspace{200pt}
+\maketitle
+\begin{center}
+\vspace{50pt}
+\section*{PROYECTO: ORDENES DE TRABAJO}
+\textbf{PROFESOR:} RAY BRUNETT PARRA GALAVIZ
+
+\vspace{110pt}
+
+\section*{INTEGRANTES:}
+\begin{itemize}
+\centering
+\vspace{20pt}
+    \item ARCE LLAMAS IRVIN DE JESUS
+    \item ARISTA PEREZ GRACIELA
+    \item GAMBOA LOPEZ JAFET JESHUA
+    \item MARTINEZ GONZALEZ JESUS ANTONIO
+    \item PANAMA ARELLANO JESUS ANTONIO
+\end{itemize}
+
+4A
+\thispagestyle{empty}
+\end{center}
+
+\vspace{200pt}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Especificacion de Requerimientos de Software},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.2 (Org mode 9.1.9)}, 
+ pdflang={Spanish}}
+
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\section{Introducción}
+\label{sec:org60390fa}
+
+Las órdenes de trabajo son documentos autorizados por gestores calificados en el ámbito aplicado, con el objetivo de gestionar todo tipo de operaciones y/o sus procesos relacionados para el cumplimiento de este de la manera correcta.
+
+Es el concepto principal del proyecto, con el cual se espera desarrollar un producto de calidad para la gestión de órdenes de trabajo con la finalidad de generar una solución a los problemas de gestión en los procesos de trabajo en una empresa ensambladora de laptops. La cual ha tenido perdidas monetarias debidas a errores humanos y este derivado de la total dependencia de estos mismos.
+
+
+
+\subsection{Propósito}
+\label{sec:org434c3ef}
+
+El propósito de este documento es describir los requisitos y establecer las bases fundamentales para el desarrollo exitoso del proyecto "Gestión de Órdenes de Trabajo". 
+
+Está dirigido específicamente al equipo de desarrollo encargado del proyecto, ya que son los principales destinatarios y beneficiarios de la información contenida en este documento . 
+
+\subsection{Alcance}
+\label{sec:org12e44a1}
+
+
+"Sistema gestor de órdenes de trabajo" con el objetivo de ayudar a los clientes con el proceso de generación de un acta de trabajo, estos documentos explican las tareas o procedimiento necesario para realizar una actividad.
+Además, ayuda con la asignación y gestión de las tareas a los empleados, así como una parte de la gestión del inventario relacionado con las tareas por asignar. 
+
+El producto no ayuda con la logística de envío, solo se confirma si el cliente lo recibió para cambiar el estado del pedido, pero no lleva totalmente el control del envío.
+
+Con este proyecto se pretende ayudar a incrementar las ventas y disminuir los errores generados humanos generados por el poco uso de tecnologías en los procesos.
+
+\subsection{Personal Involucrado}
+\label{sec:org12e44a1}
+Primer Integrante:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  Nombre & Jafet Jeshua Gamboa Lopez \\
+  \hline
+  Rol &  Scrum Master\\
+  \hline
+  Informacion de contacto & 0322103712@ut-tijuana.edu.mx \\
+  \hline
+\end{tabular}
+
+Segundo Integrante:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  Nombre & Jesus Antonio Panama Arellano  \\
+  \hline
+  Rol & Product Owner \\
+  \hline
+  Informacion de contacto & 0322103781@ut-tijuana.edu.mx \\
+  \hline
+\end{tabular}
+
+Tercer Integrante:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  Nombre & Jesus Antonio Martinez Gonzalez  \\
+  \hline
+  Rol & Scrum team \\
+  \hline
+  Informacion de contacto & 0322103757@ut-tijuana.edu.mx \\
+  \hline
+\end{tabular}
+
+Cuarto Integrante:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  Nombre & Graciela Arista Perez \\
+  \hline
+  Rol & Scrum team \\
+  \hline
+  Informacion de contacto & 0322103672@ut-tijuana.edu.mx \\
+  \hline
+\end{tabular}
+
+Quinto Integrante:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  Nombre & Irvin de Jesus Arce Llamas  \\
+  \hline
+  Rol & Scrum team \\
+  \hline
+  Informacion de contacto & 0322103670@ut-tijuana.edu.mx \\
+  \hline
+\end{tabular}
+
+
+\subsection{Resumen}
+\label{sec:orgdaca22c}
+
+El documento cuenta con un listado de requerimientos generales, funcionales y no
+funcionales con el nombre del requerimiento, descripción, encargados de verificar y validar los mismos.
+
+Los requerimientos han sido descritos de manera clara y concisa de forma que le
+sea fácil comprender al lector las especificaciones del software.
+
+\section{Descripción general}
+\label{sec:orgc1c4017}
+\subsection{Perspectiva del producto}
+\label{sec:org24980a8}
+El software es un producto independiente de los software de la empresa.
+
+El producto en cuestión, quiere suplir toda la necesidad de la empresa y digitalizar todo el papeleo, esto con la finalidad mejorar los rendimientos, ganancias y disminuir errores.
+
+Este mismo debe ser intuitivo debido a que los usuarios son operadores, los cuales no son totalmente especialistas en estos software, sino que tienen que ser capacitados, estos procesos en ocasiones pueden llegar a ser largo y tedioso dependiendo de las cualidades de capacitadores y las habilidades del los operadores. Para facilitar esto, el proyecto tiene la característica de ser intuitivo, sencillo y ergonómico.
+
+
+
+\subsection{Funcionalidad del producto}
+\label{sec:orgaf51da6}
+
+El proyecto deberá de seguir ciertos requerimientos importantes para su desarrollo, las caracteristicas que tendra son en base al propósito, alcance y objetivo que se solicita.
+
+Las funciones que debera seguir la aplicación son las siguientes
+\begin{itemize}
+    \item Por parte del cliente: podrá realizar un pedido, y asi mismo podra ver el estado de este y tambien podra ver su historial de pedidos.
+    \item Por parte del administrador: podrá tomar un pedido y asignar ordenes de trabajo al pedido, y asi mismo, de esas ordenes de trabajo se asignan actividades a los empleados.
+
+    Tambien podra checar el stock de los componentes que tiene la empresa, y asi mismo podra aumentar la cantidad y añadir mas componentes.
+    \item Por parte del empleado: podrá checar las actividades que tiene asignadas y cambiarle el estado a la actividad.
+\end{itemize}
+
+\subsection{Características de los usuarios}
+\label{sec:orga40b0ee}
+\vspace{10pt}
+
+\begin{tabular}{|c|p{12cm}|c|}
+  \hline
+  Tipo de usuario & Cliente \\
+  \hline
+  Formación & No se requiere experiencia en nada pero se recomienda experiencia en personalizacion de PCs \\
+  \hline
+  Habilidades & Conocimientos básicos de componentes de PC, capacidad para personalizar PCs. \\
+  \hline
+  Actividades & Descargar la aplicación, crear personalizar PCs seleccionando componentes, realizar pedidos de PCs personalizadas, ver el estado de pedidos actuales, revisar historial de pedidos pasados. \\
+  \hline
+\end{tabular}
+\vspace{10pt}
+
+\begin{tabular}{|c|p{12cm}|c|}
+  \hline
+  Tipo de usuario & Administrador \\
+  \hline
+  Formación & Preferiblemente educación relacionada con administración de empresas o áreas afines. \\
+  \hline
+  Habilidades & Uso avanzado de la aplicación, habilidades analíticas, capacidad para organizar y asignar tareas. \\
+  \hline
+  Actividades & Acceder a la aplicación, asignar órdenes de trabajo a pedidos, asignar actividades a empleados, supervisar el progreso de las órdenes y  actividades, asignar roles. \\
+  \hline
+\end{tabular}
+\vspace{10pt}
+
+\begin{tabular}{|c|p{12cm}|c|}
+  \hline
+  Tipo de usuario & Empleado \\
+  \hline
+  Formación & Puede variar según las actividades, desde formación técnica en ensamblaje de PCs hasta educación técnica relacionada con el área. \\
+  \hline
+  Habilidades & Uso de la aplicación, habilidades técnicas específicas relacionadas con las actividades asignadas, capacidad para seguir instrucciones detalladas. \\
+  \hline
+  Actividades & Acceder a la aplicación, ver las tareas asignadas, informar sobre el progreso de sus actividades, colaborar con otros empleados según sea necesario. \\
+  \hline
+\end{tabular}
+
+\subsection{Restricciones}
+\label{sec:org5ca5790}
+
+Se empleara la metodologia scrum, por todas las ventajas que esta ofrece. Asi mismo, en la empresa es la metodologia mas utilizada.
+
+La aplicacion esta hecha para funcionar solamente en un dispositivo movil con sistema operativo android. La aplicacion no podra ejecutarse en otro sistema operativo.
+
+
+\subsection{Suposiciones y dependencias}
+\label{sec:org0ae23fe}
+
+Si la empresa cambia el tipo de producto que venden (por ejemplo: si le cambian pcs por laptops o si le agregan laptops) entonces el documento SRC se vera en la necesidad de ser modificado.
+
+Si la empresa ya no requiere de una aplicacion android y se requiere de otro sistema operativo, el documento SRC se vera en la necesidad de ser modificado.
+
+Si la empresa no desea que el cliente realice sus pedidos por medio de la aplicacion movil, el documento SRC se vera en la necesidad de ser modificado.
+
+
+\subsection{Requisitos futuros}
+\label{sec:org33cfcdb}
+
+A futuro se podria implementar un sistema en el cual el cliente pueda ver por donde se estan mandando sus producto y en que parte del mundo estan.
+
+
+\section{Requisitos específicos}
+\label{sec:org40573d1}
+
+
+
+
+
+\subsection{Requisitos comunes de las interfaces}
+\label{sec:orgfd5391f}
+
+\subsubsection{Interfaces de usuario}
+
+
+La aplicacion contará con un diseño amigable para no arruinar la experiencia del usuario.
+
+La paleta de colores a utilizar se conformara de una escala de azules y grises. He aqui los codigos:
+
+\begin{itemize}
+    \item \#0288D1
+    \item \#B3E5FC
+    \item \#03A9F4
+    \item \#F5F5F5
+    \item \#9E9E9E
+    \item \#212121
+    \item \#757575
+    \item \#BDBDBD
+\end{itemize}
+
+
+\subsubsection{Interfaces de hardware}
+No hay un estándar predilecto para el hardware del dispositivo debido a que se busca que sea compatible con la mayoría de dispositivos actuales y no actuales, a lo cual solo se puede dar una recomendación de cuáles podrían ser.
+
+\begin{tabular}{|c|c|}
+\hline
+    Componente & Descripción \\
+     \hline
+     Memoria RAM & Un tamaño recomendado de 4 GB para un buen rendimiento. \\
+     \hline
+      Almacenamiento interno & Capacidad sugerida 64 GB. \\
+     \hline
+     Conectividad & Wi-Fi, Bluetooth, 4G/5G\\
+     \hline
+     Sistema operativo & Versiones Android 11 en adelante y versiones iOS 15 en adelante\\
+     \hline
+\end{tabular}
+
+\subsubsection{Interfaces de software}
+No existen interfaces de software debido a que la orientación del proyecto no es ser una parte complementaria de otro producto, sino ser un producto sólido, que no necesita la ayuda con otro software para su funcionamiento.
+
+
+\subsubsection{Interfaces de comunicación}
+No existe necesidad de comunicarse con ningún software externo.
+
+\subsection{Requerimientos funcionales}
+En este apartado se especificaran los requerimientos que necesita el proyecto, se especificara a detalle en que consiste cada requerimiento, su nivel de prioridad, caracteristicas y un numnero que lo identifique. Como se menciono antes, el proyecto se manejara por 3 tipos de usuarios, los Administradores, Empleados y Clientes, en los requerimientos se mencionaran cada requerimiento que le corresponde a cada tipo de usuario.
+
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 01 \\
+        \hline
+        \textbf{Nombre de requisito} & Inicio de sesion de clientes \\
+        \hline
+        \textbf{Descripcion} & La aplicacion debe  contar con un inicio de sesion en este caso un usuario tipo Cliente debe de acceder sin problemas por medio de su correo y una contraseña, siempre y cuando ya este registrado  \\
+        \hline
+        \textbf{Caracteristicas} & Inicio de sesion para los clientes, un cliente debe de acceder con un correo y contraseña  ya registradas en la aplicacion \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 02 \\
+        \hline
+        \textbf{Nombre de requisito} & Registro de clientes \\
+        \hline
+        \textbf{Descripcion} & En caso de que el cliente no cuente con una cuenta, habra un apartado para que pueda crear una \\
+        \hline
+        \textbf{Caracteristicas} & La cuenta debe de contar con: datos personales (nombre y direccion), contactos (numero telefonico), correo, contraseña y nombre fiscal.\\
+        \hline
+        \textbf{Prioridad del requisito} & Alta \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 03 \\
+        \hline
+        \textbf{Nombre de requisito} & Pedidos creados por el cliente \\
+        \hline
+        \textbf{Descripción} & El cliente accede al proyecto con la intención de pedir uno o varios productos disponibles, por cada compra realizada se genera un pedido \\
+        \hline
+        \textbf{Características} & Los pedidos pueden ser tantos como el cliente ordene, cada pedido debe tener sus características como lo son los tipos de productos y cuál es su cantidad.  \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta  \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 04 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Mostrar el estado del pedido \\
+        \hline
+        \textbf{Descripción} & Los pedidos realizados por el cliente pasan por varios procesos y es importante que el cliente tenga actualizaciones del estado del pedido.  \\
+        \hline
+        \textbf{Características} & Los estados son establecidos por los administradores, aunque se debe de tener un apartado donde el cliente pueda comprobar el estado del pedido\\
+        \hline
+        \textbf{Prioridad del requisito} & Alta  \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 05 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Historial de pedidos \\
+        \hline
+        \textbf{Descripcion} & Los Clientes deben de tener un apartado que muestre un historial delos pedidos que han realizado. \\
+        \hline
+        \textbf{Caracteristicas} & Los pedidos generados se registran y se muestran en un apartado para que los clientes puedan ver sus pedidos. \\
+        \hline
+        \textbf{Prioridad del requisito} & Media  \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 06 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Inicio de sesion para administradores \\
+        \hline
+        \textbf{Descripcion} & El mismo inicio de sesion tambien debe de poder identificar si la cuenta que accede sea administrador, de ser el caso, se accede a sus funciones disponibles\\
+        \hline
+        \textbf{Caracteristicas} & El administrador accede con una cuenta agregada desde la base de datos o por algun administrador, el administrador tendra acceso a varias funciones que se mencionaran en los siguientes requerimientos. \\
+        \hline
+        \textbf{Prioridad del requisito} &Alto  \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 07 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Administrador podra ver los pedidos \\
+        \hline
+        \textbf{Descripcion} & Un apartado para el administrador que pueda ver los pedidos generados por los clientes \\
+        \hline
+        \textbf{Caracteristicas} & Los pedidos mostrados deben tener sus estados, productos que contiene y descripcion. Solo deberian de mostrarse los pedidos que no se han finalizado  \\
+        \hline
+        \textbf{Prioridad del requisito} & Alto \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 08 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Asignar ordenes de trabajo \\
+        \hline
+        \textbf{Descripcion} & En base a los pedidos solicitados, se deben de generar ordenes de trabajo, las ordenes de trabajo son creadas con el proposito de llevar un orden al desarrollar los pedidos \\
+        \hline
+        \textbf{Caracteristicas} & Las ordenes de trabajo se generan en base a las necesidades del pedido, con sus actividades, sus estados y a cual pedido estan dirigidas\\
+        \hline
+        \textbf{Prioridad del requisito} &  Alta\\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 09 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Ordenes creadas  \\
+        \hline
+        \textbf{Descripcion} & Los administradores tendran otro apartado donde podran ver las ordenes de trabajo creadas, a cuales pedidos estan relacionadas y sus estados \\
+        \hline
+        \textbf{Caracteristicas} &  \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 10 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Creacion de actividades \\
+        \hline
+        \textbf{Descripcion} & Las ordenes de trabajo deben tener las actividades establecidas, para especificar las tareas y roles que tendran los empleados. \\
+        \hline
+        \textbf{Caracteristicas} & Las actividades contienen las especificaciones de lo que se debe de realizar, sus fechas y a que ordenes de trabajo estan asociadas.Tambien a los empleados que son asignados para realizar las actividades \\
+        \hline
+        \textbf{Prioridad del requisito} & Altas  \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 11 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Nuevos Administradores \\
+        \hline
+        \textbf{Descripcion} & Los administradores podran agregar a otros administradores para acceder a sus funciones. \\
+        \hline
+        \textbf{Caracteristicas} & El administrador creara una cuenta para otro administrador, esa cuenta tendra los datos personales, datos de contacto y su cuenta con contraseña. \\
+        \hline
+        \textbf{Prioridad del requisito} & Media \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 12 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Actualizacion de estados de un pedido \\
+        \hline
+        \textbf{Descripcion} & Los pedidos al igual que varios apartados debe de contar con sus estados, como estado de proceso, finalizado, entre otros. El administrador debe de actualizar el estado del pedido para que el cliente pueda verlo \\
+        \hline
+        \textbf{Caracteristicas} & El estado se determina en base a las actividades ya realizadas por los empleados,se actualizan para llevar un orden y mostrar a los clientes como van sus pedidos \\
+        \hline
+        \textbf{Prioridad del requisito} & Alto \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 13 \\ 
+        \hline 
+        \textbf{Nombre de requisito} & Actualizacion del almacen  \\
+        \hline
+        \textbf{Descripcion} & Los productos deben de contar con los materiales para crearlos, en este apartado el administrador debe de mostrar los materiales, productos y su cantidad. \\
+        \hline
+        \textbf{Caracteristicas} & Los materiales que tendra el almacen dependeran el producto y pedidos que maneje la aplicacion,por dar un ejemplo, si se arman computadoras, se especifican los componentes, su cantidad, nombres y cuantas pc ta tienen armadas. Se actualiza constantemente para evitar errores. \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta  \\
+        \hline
+     \end{tabular}
+\end{center}
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 14 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Cambio de empleados   \\
+        \hline
+        \textbf{Descripcion} & En caso de algun posible inconveniente, se debe de poder cambiar de actividad a los empleados, con el fin de compensar falta de personal o equivocaciones al momento de asignar  \\
+        \hline
+        \textbf{Caracteristicas} &Empleados ya registrados pueden ser reasignados a otras actividades, al ser reasignados tambien se cambian sus tareas y roles  \\
+        \hline
+        \textbf{Prioridad del requisito} & Medio \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 15 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Estado de las ordenes \\
+        \hline
+        \textbf{Descripcion} & Al igual que algunos requerimientos anteriores, los estados son necesarios para indicar el proceso por el cual una orden esta pasando, con el fin de avanzar con el desarrollo del pedido \\
+        \hline
+        \textbf{Caracteristicas} & El administrador puede actualizar el estado de la orden, en base a las actividades de los empleados, asignandole si fue finalizada o esta en proceso. \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 16 \\ 
+        \hline
+        \textbf{Nombre de requisito} & Registro de empleados \\
+        \hline
+        \textbf{Descripcion} & Un administrador debe de crear usuarios empleados, estos usuarios cumplen con la funcion de realizar las actividades requeridas. \\
+        \hline
+        \textbf{Caracteristicas} & El administrador crea un usuario con los datos personales,contacto, correo y contraseña. \\
+        \hline
+        \textbf{Prioridad del requisito} & Alto \\
+        \hline
+     \end{tabular}
+\end{center}
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 17 \\ 
+        \hline
+        \textbf{Nombre de requisito} &  Inicio de sesion para los empleados\\
+        \hline
+        \textbf{Descripcion} & Al iniciar sesion, tambien debe de poder reconocer si la cuenta es de un empleado, al hacerlo se accede a sus funciones.\\
+        \hline
+        \textbf{Caracteristicas} & Al momento de iniciar sesion, en caso de que el usuario sea un empleado, acceda a las opciones que tiene dentro de la aplicacion. \\
+        \hline
+        \textbf{Prioridad del requisito} & Alto \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 18\\ 
+        \hline
+        \textbf{Nombre de requisito} &  Ver actividades asignadas \\
+        \hline
+        \textbf{Descripcion} & Los empleados podran visualizar las actividades asignadas por el cliente.  \\
+        \hline
+        \textbf{Caracteristicas} & Cada empleado vera por sus propias actividades asginadas a realizar, estas deben ser asignadas por el cliente, para que el empleado pueda visualizarlas despues.   \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta \\
+        \hline
+     \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|c|p{6cm}|}
+        \hline
+        \textbf{Número de requisito} & 19\\ 
+        \hline
+        \textbf{Nombre de requisito} &  cambiar estado de actividades asignadas \\
+        \hline
+        \textbf{Descripcion} & Los empleados deben poder cambiar el estado de las actividades asignadas por el cliente. \\
+        \hline
+        \textbf{Caracteristicas} & Cuando los empleados ya tienen asignadas sus actividades por el cliente, ellos pueden cambiar el estado de la actividad en concreto, esto debe hacerse con un tipo de estado, por ejemplo: finalizado, esto significaría que la actividad está finalizada.   \\
+        \hline
+        \textbf{Prioridad del requisito} & Alta \\
+        \hline
+     \end{tabular}
+\end{center}
+
+
+\subsection{Requisitos no funcionales}
+
+\subsubsection{Requisitos de rendimiento}
+\begin{itemize}
+\item El sistema debe ser capaz de manejar al menos 2000 usuarios conectados al mismo tiempo. 
+\item El tiempo de respuesta  para el inicio de sesion en general debe ser el mas rapido posible sin superar los 15 segundos.
+\item  El sistema debe ser capaz de procesar un minimo de 1000 pedidos por minuto.  
+\end{itemize}
+
+\subsubsection{Seguridad}
+\begin{itemize}
+\item Implementar cifrados de extremo a extremo para mantener en resguardo la informacion de los usuarios principalmente clientes.
+\item El acceso de los administradores debe requerir un metodo de autenticacion adicional al ingresar para asegurar que realemnete tiene acceso al sistema. 
+\end{itemize}
+
+\subsubsection{Fiabilidad}
+\begin{itemize}
+\item El sistema debe tener una tasa de incidentes no mayor al 2 porciento por mes. 
+\item El tiempo promedio de incidentes permitidos no debe ser mayor al 2 porciento por mes.
+\item Implementar procedimiento de respaldo para garantizar aun mas la recuperacion de datos en caso de posibles fallas. 
+\end{itemize}
+
+\subsubsection{Disponibilidad}
+\begin{itemize}
+\item  El producto estará diseñado para una disponibilidad del 95 porciento, tomando teniendo en cuenta problemas externos al funcionamiento. 
+\item Los tiempos de espera en pantallas de carga se desea que sean los mínimos debido a que en la gestión el orden y el tiempo son fundamentales.
+\end{itemize}
+
+\subsubsection{Mantenibilidad}
+\begin{itemize}
+\item Las actividades de mantenimiento deben ser realizados por personal capacitado para ello. 
+\item Se debe generar reportes para evaluar el rendimiento y la usabilidad del sistema
+\item El sistema debe ser diseñado de manera que se al requerir actualizaciones y correcciones se realicen facilmente. 
+\end{itemize}
+
+
+\subsubsection{Portabilidad}
+\begin{itemize}
+\item La interzas de usuario debe ser diseñada para ser compatible con diferentes dispositivos y tamaños de pantalla. 
+\item El codigo del sistema debe seguir estandares de programación que faciliten su traslado.
+\end{itemize}
+ 
+
+\newpage
+
+
+\section{Mockups}
+\label{sec:org75cea03}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{index.png}
+  \caption{Index}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{InicioSesion.png}
+  \caption{Inicio de sesion}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Registro1.png}
+  \caption{Registro 1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Registro2.png}
+  \caption{Registro 2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente1.png}
+  \caption{Cliente 1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente2.png}
+  \caption{Cliente 2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente3.png}
+  \caption{Cliente 3}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente4.png}
+  \caption{Cliente 4}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente5.png}
+  \caption{Cliente 5}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente6.png}
+  \caption{Cliente 6}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente7.png}
+  \caption{Cliente 7}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente8.png}
+  \caption{Cliente 8}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente9.png}
+  \caption{Cliente 9}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente10.png}
+  \caption{Cliente 10}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente11.png}
+  \caption{Cliente 11}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente12.png}
+  \caption{Cliente 12}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente13.png}
+  \caption{Cliente 13}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente14.png}
+  \caption{Cliente 14}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente15.png}
+  \caption{Cliente 15}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente16.png}
+  \caption{Cliente 16}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente17.png}
+  \caption{Cliente 17}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente18.png}
+  \caption{Cliente 18}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Cliente19.png}
+  \caption{Cliente 19}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin1.png}
+  \caption{Admin 1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin2.png}
+  \caption{Admin 2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin3.png}
+  \caption{Admin 3}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin4.png}
+  \caption{Admin 4}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin5.png}
+  \caption{Admin 5}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin6.png}
+  \caption{Admin 6}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin7.png}
+  \caption{Admin 7}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin8.png}
+  \caption{Admin 8}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin9.png}
+  \caption{Admin 9}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Admin10.png}
+  \caption{Admin 10}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Empleado1.png}
+  \caption{Empleado 1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Empleado2.png}
+  \caption{Empleado 2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Empleado3.png}
+  \caption{Empleado 3}
+\end{figure}
+
+\end{document}

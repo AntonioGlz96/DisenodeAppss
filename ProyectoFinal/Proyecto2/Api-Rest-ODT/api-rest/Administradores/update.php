@@ -1,0 +1,10 @@
+<?php
+require_once('../../includes/Administradores.php');
+
+$_SERVER["REQUEST_METHOD"] = "PUT";
+
+if($_SERVER["REQUEST_METHOD"] == "PUT"
+&& isset($_GET['matricula']) && isset($_GET['nombre']) && isset($_GET['apePaterno']) && isset($_GET['apeMaterno']) && isset($_GET['dirCalle']) && isset($_GET['dirNumero']) && isset($_GET['dirColonia']) && isset($_GET['dirCP']) && isset($_GET['correo']) && isset($_GET['contrasena']) && isset($_GET['numTel'])
+){
+    Administradores::update($_GET['matricula'], $_GET['nombre'], $_GET['apePaterno'], $_GET['apeMaterno'], $_GET['dirCalle'], $_GET['dirNumero'], $_GET['dirColonia'], $_GET['dirCP'], $_GET['correo'], $_GET['contrasena'], $_GET['numTel']);
+}
